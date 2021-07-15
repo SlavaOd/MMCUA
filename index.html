@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<style>
+    .table {
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    td {
+        width: 30%;
+    }
+    input {
+        width: 85%;
+        text-align: center;
+    }
+    .about {
+      display: none;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0.7;
+      color: #fff;
+    }
+    .about_item {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .close {
+      width: 50px;
+      height: 50px;
+      display: block;
+      margin: 0 auto;
+    }
+</style>
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+              <th scope="col">АП</th>
+              <th scope="col">Назва тарифу</th>
+              <th scope="col">К-сть підключень <br> за місяць</th>
+              <th scope="col">Винагорода за <br> перше підключення</th>
+              <th scope="col">Трафік за місяць</th>
+              <th scope="col">Трафік за 5 місяців</th>
+              <th scope="col">К-сть ТП Розваги/Love для цієї суми</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">75</th>
+              <td>Для батьків</td>
+              <td><input class="parents" type="number" name="" id=""></td>
+              <td><input class="sell_par" type="number" name="" id="" class="sell_all"></td>
+              <td><input class="month_par" type="number" name="" id=""></td>
+              <td><input class="six_par" type="number" name="" id=""></td>
+              <!-- <td><input type="number" name="" disabled id=""></td> -->
+            </tr>
+            <tr>
+              <th scope="row">100</th>
+              <td>Регіон/Для батьків +</td>
+              <td><input class="parents_int" type="number" name="" id=""></td>
+              <td ><input class="sell_par_int" type="number" name="" id="" class="sell_all"></td>
+              <td><input class="month_par_int" type="number" name="" id=""></td>
+              <td><input class="six_par_int" type="number" name="" id=""></td>
+              <!-- <td><input type="number" name="" disabled id=""></td> -->
+            </tr>
+            <tr>
+              <th ine="row">150</th>
+              <td>Smart</td>
+              <td><input class="smart" type="number" name="" id=""></td>
+              <td ><input class="sell_smart" type="number" name="" id="" class="sell_all"></td>
+              <td><input class="month_smart" type="number" name="" id=""></td>
+              <td><input class="six_smart" type="number" name="" id=""></td>
+              <!-- <td><input type="number" name="" disabled id=""></td> -->
+            </tr>
+            <tr>
+                <th ine="row">225</th>
+                <td>Smart+</td>
+                <td><input class="smart_plus" type="number" name="" id=""></td>
+                <td><input class="sell_smart_plus" type="number" name="" id="" class="sell_all"></td>
+                <td><input class="month_plus" type="number" name="" id=""></td>
+                <td><input class="six_plus" type="number" name="" id=""></td>
+                <!-- <td><input type="number" name="" disabled id=""></td> -->
+            </tr>
+            <tr>
+                <th ine="row">300</th>
+                <td>Smart Max</td>
+                <td><input class="smart_max" type="number" name="" id=""></td>
+                <td ><input class="sell_smart_max" type="number" name="" id="" class="sell_all"></td>
+                <td><input class="month_max" type="number" name="" id=""></td>
+                <td><input class="six_max" type="number" name="" id=""></td>
+                <!-- <td><input type="number" name="" disabled id=""></td> -->
+            </tr>
+            <tr>
+              <th ine="row">600</th>
+              <td>Smart Бізнес</td>
+              <td><input class="smart_biz" type="number" name="" id=""></td>
+              <td ><input class="sell_smart_biz" type="number" name="" id="" class="sell_all"></td>
+              <td><input class="month_biz" type="number" name="" id=""></td>
+              <td><input class="six_biz" type="number" name="" id=""></td>
+              <!-- <td><input type="number" name="" disabled id=""></td> -->
+          </tr>
+            <tr>
+                <th ine="row">Загалом</th>
+                <td></td>
+                <td><input class="all" type="number" name="" id=""></td>
+                <td ><input type="number" name="" id="" class="sell_all"></td>
+                <td><input class="month_all" type="number" name="" id=""></td>
+                <td><input class="six_all" type="number" name="" id=""></td>
+                <td><input class="reg" type="number" name="" id=""></td>
+            </tr>
+          </tbody>
+    </table>
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-primary" type="button">Підрахувати</button>
+      <button class="res btn btn-primary" type="button">Скинути</button>
+      <button class="nkp btn btn-primary" type="button">Переваги НКП</button>
+    </div>
+    <div class="about">
+      <div class="about_item">
+        <ul>
+          <li>Тарифи вигідніші: більше МБ, хвилин на інших операторів (включаючи на міські), дія пакета послуг на місяць, а не 28 днів</li>
+          <li>Абонплата знімається щоденно, рівними частинами , є можливість користуватися послугами при мінусовому балансі</li>
+          <li>Безпечне підключення: оформлюється на документи клієнта, що попереджує шахрайські дії,наприклад відновлення SIM карти и т.д.</li>
+          <li> Легкий старт: в тарифах Smart, Smart+, Smart Max перший місяць коштує всього 100 грн. </li>
+          <li>Можливість підключення до 5 сім-карт на один документ</li>
+          <li>Швидкий звязок з оператором: окрема лінія по номеру 477</li>
+          <li>SIM карта при підключенні видається безкоштовно</li>
+        </ul>
+      </div>
+      <button class="close btn btn-primary" type="button">X</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
